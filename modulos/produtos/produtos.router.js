@@ -7,7 +7,7 @@ angular
 			.state('produto', {
 				url: '/produto',
 				controller: 'produtoController',
-				templateUrl: '/modulos/produtos/produto.html'
+				templateUrl: '/modulos/produtos/produto.listar.html'
 			})
 			.state('produtoCadastrar',{
 				url: '/produto/cadastrar',

@@ -10,9 +10,9 @@ function config($stateProvider, $urlRouterProvider){
 	$stateProvider
 		.state('index',{
 			url: '/index',
-			controller: 'produtoController',
+			controller: 'appController',
 			templateUrl:'../../index.html' 
 		});
-		 $urlRouterProvider.otherwise('/produtos/produto.cadastrar.html')
+		 // $urlRouterProvider.otherwise('/index')
 }
 

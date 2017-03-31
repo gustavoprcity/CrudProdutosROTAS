@@ -1,0 +1,15 @@
+<div>
+	   <table class="table table-striped">
+            <tr> 
+                <th>Codigo</th>
+                <th>Nome</th>
+            </tr>
+
+            <tr ng-repeat="produto in produtos">
+                <td>{{produto.codigo}}</td>
+                <td>{{produto.nome}}</td>
+                <td><button class="btn" ng-click="editarProduto(produto)">Editar</button></td>
+                <td><button class="btn" ng-click="deletarProduto(produto)">Excluir</button></td>
+            </tr>
+        </table>  
+</div>	
