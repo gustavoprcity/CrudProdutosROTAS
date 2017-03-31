@@ -9,4 +9,9 @@ angular
 				controller: 'produtoController',
 				templateUrl: '/modulos/produtos/produto.html'
 			})
+			.state('produtoCadastrar',{
+				url: '/produto/cadastrar',
+				controller: 'produtoCadastrarController',
+				templateUrl: '/modulos/produtos/produto.cadastrar.html'
+			})
 	}

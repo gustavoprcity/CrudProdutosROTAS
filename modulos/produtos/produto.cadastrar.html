@@ -1,0 +1,23 @@
+<div>
+     <form ng-submit="cadastrarProduto(produto)">    
+                 <h3>{{app}}</h3>
+        <input class="form-control" type="text" name="codigoProduto" ng-model="produto.codigo" placeholder="codigo">
+        <input class="form-control" type="text" name="nomeProduto" ng-model="produto.nome" placeholder="nome">
+        <button class="btn btn-primary btn-clock" type="submit">CADASTRAR</button>
+        </form>
+     <table class="table table-striped">
+            <tr> 
+                <th>Codigo</th>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Estoque</th>
+            </tr>
+
+            <tr ng-repeat="produto in listaProdutos">
+                <td>{{produto.codigo}}</td>
+                <td>{{produto.nome}}</td>
+                <td>{{produto.preco}}</td>
+                <td>{{produto.estoque}}</td>
+            </tr>
+        </table>
+</div>

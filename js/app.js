@@ -13,5 +13,6 @@ function config($stateProvider, $urlRouterProvider){
 			controller: 'produtoController',
 			templateUrl:'../../index.html' 
 		});
+		 $urlRouterProvider.otherwise('/produtos/produto.cadastrar.html')
 }
 
